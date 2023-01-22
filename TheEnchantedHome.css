@@ -2,16 +2,6 @@ body{
   background-color: #00ccff;
 }
 
-.divFrame{
-  display: block; 
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  height: calc(100vh - 300px);
-  overflow:hidden;
-}
 iframe{
   display: block; 
   margin-left: auto;
@@ -19,8 +9,8 @@ iframe{
   width: 80%;
   margin-top: 20px;
   margin-bottom: 20px;
-  height: 100%;
-  transform: scale(2);
+  height: calc(100vh - 300px);
+  border: none;
 }
 
 .title{
