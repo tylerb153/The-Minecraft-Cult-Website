@@ -1,3 +1,7 @@
+:root {
+  --widthOfContent: 80%;
+}
+
 body{
   background-color: #00ccff;
 }
@@ -6,7 +10,7 @@ nav{
   display: block; 
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  width: var(--widthOfContent);
   margin-top: 20px;
   margin-bottom: 20px;
   height: 50px;
@@ -18,12 +22,13 @@ iframe{
   display: block; 
   margin-left: auto;
   margin-right: auto;
-  width: calc(80% - 20px);
+  width: calc(var(--widthOfContent) - 20px);
   margin-top: 20px;
   margin-bottom: 20px;
   height: calc(100vh - 400px);
   border: 10px solid black;
   border-radius: 20px;
+  background-color: black;
 }
 
 #title{
@@ -52,14 +57,14 @@ iframe{
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  width: var(--widthOfContent);
 }
 
 #divIP{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  width: var(--widthOfContent);
   height: 50px;
 }
 
