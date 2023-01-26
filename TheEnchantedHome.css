@@ -2,6 +2,17 @@ body{
   background-color: #00ccff;
 }
 
+nav{
+  display: block; 
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 50px;
+  background-color: #ffff00;
+}
+
 iframe{
   display: block; 
   margin-left: auto;
@@ -44,10 +55,10 @@ iframe{
 
 .divIP{
   display: block;
-  margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
   width: 80%;
+  height: 50px;
 }
 
 .ip{
