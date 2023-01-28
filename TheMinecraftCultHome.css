@@ -1,6 +1,6 @@
 :root {
   --widthOfContent: 90%;
-  --transitionTime: 1.2s;
+  --transitionTime: 0.2s;
 }
 
 body{
@@ -87,11 +87,14 @@ iframe{
 #buttonContainer{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  width: calc(100% - 10px);
+  height: 100%;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 #navButton:hover{
   cursor: pointer;
-  background-color: #ffff0087;
 }
 
 #navButton:active{
@@ -99,7 +102,7 @@ iframe{
   color:#ffff00;
 }
 
-#navAnchorMiddle{
+#navAnchor{
   width: calc(100% - 10px);
   height: calc(100% - 20px);
   margin-top: 10px;
@@ -107,54 +110,14 @@ iframe{
   margin-left: 5px;
   margin-right: 5px;
   border-radius: 10px;
-  transition: width var(--transitionTime), height var(--transitionTime), margin-top var(--transitionTime), margin-bottom var(--transitionTime), margin-left var(--transitionTime), margin-right var(--transitionTime);
+  transition: width var(--transitionTime) ease-in-out, height var(--transitionTime) ease-in-out, margin-top var(--transitionTime) ease-in-out, margin-bottom var(--transitionTime) ease-in-out, margin-left var(--transitionTime) ease-in-out, margin-right var(--transitionTime) ease-in-out;
 }
 
-#navAnchorMiddle:hover{
+#navAnchor:hover{
   margin-top: 5px;
   margin-bottom: 5px;
   margin-right: calc(5px / 2);
   margin-left: calc(5px / 2);
   width: calc(100% - 5px);
-  height: calc(100% - 10px);
-}
-
-#startOfNav{
-  width: calc(100% - 15px);
-  height: calc(100% - 20px);
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 10px;
-  margin-right: 5px;
-  border-radius: 10px;
-  transition: width var(--transitionTime), height var(--transitionTime), margin-top var(--transitionTime), margin-bottom var(--transitionTime), margin-left var(--transitionTime), margin-right var(--transitionTime);
-}
-
-#startOfNav:hover{
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-right: calc(5px / 2);
-  margin-left: 5px;
-  width: calc(100% - (5px + (5px / 2)));
-  height: calc(100% - 10px);
-}
-
-#endOfNav{
-  width: calc(100% - 15px);
-  height: calc(100% - 20px);
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 5px;
-  margin-right: 10px;
-  border-radius: 10px;
-  transition: width var(--transitionTime), height var(--transitionTime), margin-top var(--transitionTime), margin-bottom var(--transitionTime), margin-left var(--transitionTime), margin-right var(--transitionTime);
-}
-
-#endOfNav:hover{
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-right: 5px;
-  margin-left: calc(5px / 2);
-  width: calc(100% - (5px + (5px / 2)));
   height: calc(100% - 10px);
 }
