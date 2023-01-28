@@ -1,5 +1,6 @@
 :root {
   --widthOfContent: 90%;
+  --transitionTime: 0.2s;
 }
 
 body{
@@ -71,3 +72,37 @@ iframe{
 #ip{
   float: right;
 }
+
+#navButton{
+  width: calc(100% - 10px);
+  height: calc(100% - 20px);
+  margin-top: 10px;
+  margin-left: 5px;
+  border-radius: 10px;
+  font-size: 100%;
+  font-family: Comic Sans MS;
+  background-color: #ffff00;
+  border: 2px solid black;
+  transition: background-color var(--transitionTime), margin-top var(--transitionTime), width var(--transitionTime), height var(--transitionTime);
+}
+
+#buttonContainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#navButton:hover{
+  cursor: pointer;
+  background-color: #ffff0087;
+  margin-top: 5px;
+  width: calc(100% - 5px);
+  height: calc(100% - 10px);
+}
+
+#navButton:active{
+  background-color: #000000;
+  color:#ffff00;
+
+}
+
+
