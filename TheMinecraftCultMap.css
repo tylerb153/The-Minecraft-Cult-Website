@@ -33,6 +33,16 @@ iframe{
   background-color: black;
 }
 
+footer{
+  margin: auto;
+  margin-top: 1em;
+  text-align: center;
+}
+
+footer>a{
+  color: black;
+}
+
 #title{
   float:right;
   display: block;
